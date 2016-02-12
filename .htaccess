@@ -1,0 +1,17 @@
+Options -Indexes
+RewriteEngine on
+RewriteRule ^./imgs/(.*)$ - [L] 
+RewriteRule ^imgs/(.*)$ - [L] 
+RewriteRule ^./images/(.*)$ - [L]
+RewriteRule ^images/(.*)$ - [L]
+RewriteRule ^./css/(.*)$ - [L] 
+RewriteRule ^css/(.*)$ - [L]
+RewriteRule ^./js/(.*)$ - [L]
+RewriteRule ^js/(.*)$ - [L]
+RewriteRule ^./files/(.*)$ - [L]
+RewriteRule ^files/(.*)$ - [L]
+RewriteRule ^./record/(.*)$ - [L]
+RewriteRule ^record/(.*)$ - [L]
+RewriteRule ^index.php$ - [L] 
+RewriteRule ^index.*$ index.php  [L,QSA]
+RewriteRule ^(.*)$ index.php?page=$1 [L,QSA]
